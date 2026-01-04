@@ -28,7 +28,7 @@ async def apply(callback: CallbackQuery):
     admin_message = (
         f'<b>Пользователь <a href="tg://user?id={user_id}">{callback.from_user.first_name}</a> оставил заявку в боте</b>')
 
-    photo = FSInputFile("image/admin_photo.jpg")
+    photo = FSInputFile("photo_2026-01-04_18-54-14.jpg")
     await bot.send_photo(
         chat_id = ADMIN_ID,
         photo = photo,
