@@ -2,9 +2,11 @@ from aiogram import Bot, Dispatcher, F
 from aiogram.filters import Command
 from aiogram.types import Message, CallbackQuery, FSInputFile
 import asyncio
-from config import TOKEN, ADMIN_ID
 import keyboards as kb
+import os
 
+TOKEN = os.getenv("TOKEN")
+ADMIN_ID = os.getenv("ADMIN_ID")
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
